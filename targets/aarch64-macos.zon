@@ -1,0 +1,28 @@
+.{
+    .include = .{},
+    .files = .{},
+    .flags = .{
+        "-DFORCE_RSUSB_BACKEND",
+        "-DRS2_USE_LIBUVC_BACKEND",
+        "-DEASYLOGGINGPP_ASYNC",
+        "-pthread",
+        "-Wno-missing-field-initializers",
+        "-Wno-switch",
+        "-Wno-multichar",
+        "-Wsequence-point",
+        "-Wformat",
+        "-Wformat-security",
+        "-mstrict-align",
+        "-ftree-vectorize",
+        "-fobjc-arc",
+    },
+    .modules = .{
+        "usb",
+        "hid",
+        "rsusb_backend",
+        "libusb",
+        "libuvc",
+        "third-party_tclap",
+        "third-party_realsense_file",
+    },
+}

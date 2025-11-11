@@ -1,0 +1,16 @@
+.{
+    .include = .{
+        "src/hid",
+        "third-party/hidapi",
+    },
+    .files = .{
+        "src/hid/hid-device.cpp",
+        "third-party/hidapi/hidapi.cpp",
+    },
+    .headers = .{
+        .{ .source = "src/hid/hid-types.h", .dest = "hid/hid-types.h" },
+        .{ .source = "src/hid/hid-device.h", .dest = "hid/hid-device.h" },
+        .{ .source = "third-party/hidapi/hidapi.h", .dest = "hid/hidapi.h" },
+    },
+}
+

@@ -1,0 +1,12 @@
+.{
+    .include = .{
+        "src/rsusb-backend",
+    },
+    .files = .{
+        "src/rsusb-backend/rsusb-backend.cpp",
+    },
+    .headers = .{
+        .{ .source = "src/rsusb-backend/rsusb-backend.h", .dest = "rsusb_backend/rsusb-backend.h" },
+    },
+}
+

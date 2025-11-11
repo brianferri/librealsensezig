@@ -1,0 +1,10 @@
+.{
+    .include = .{
+        "src/platform",
+    },
+    .files = .{
+        "src/platform/platform-utils.cpp",
+        "src/platform/uvc-option.cpp",
+    },
+    .headers = .{},
+}

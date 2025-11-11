@@ -1,0 +1,27 @@
+.{
+    .include = .{
+        "third-party/realdds/include",
+        "third-party/realdds/include/realdds",
+        "third-party/realdds/include/realdds/topics",
+        "third-party/realdds/include/realdds/topics/blob",
+        "third-party/realdds/include/realdds/topics/flexible",
+        "third-party/realdds/include/realdds/topics/ros2",
+        "third-party/realdds/include/realdds/topics/ros2/builtin_interfaces/msg",
+        "third-party/realdds/include/realdds/topics/ros2/geometry_msgs/msg",
+        "third-party/realdds/include/realdds/topics/ros2/rcl_interfaces/msg",
+        "third-party/realdds/include/realdds/topics/ros2/rcl_interfaces/srv",
+        "third-party/realdds/include/realdds/topics/ros2/rmw_dds_common/msg",
+        "third-party/realdds/include/realdds/topics/ros2/sensor_msgs/msg",
+        "third-party/realdds/include/realdds/topics/ros2/std_msgs/msg",
+    },
+    .files = .{
+        "src/dds/rsdds-device-factory.cpp",
+        "src/dds/rsdds-serializable.cpp",
+        "src/dds/rs-dds-sensor-proxy.cpp",
+        "src/dds/rs-dds-option.cpp",
+        "src/dds/rs-dds-device-proxy.cpp",
+        "src/dds/rs-dds-device-info.cpp",
+        "src/dds/rs-dds-depth-sensor-proxy.cpp",
+    },
+    .headers = .{},
+}

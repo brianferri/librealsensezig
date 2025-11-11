@@ -1,0 +1,24 @@
+.{
+    .include = .{
+        "src/libusb",
+    },
+    .files = .{
+        "src/libusb/context-libusb.cpp",
+        "src/libusb/interface-libusb.cpp",
+        "src/libusb/device-libusb.cpp",
+        "src/libusb/messenger-libusb.cpp",
+        "src/libusb/request-libusb.cpp",
+        "src/libusb/enumerator-libusb.cpp",
+    },
+    .headers = .{
+        .{ .source = "src/libusb/context-libusb.h", .dest = "libusb/context-libusb.h" },
+        .{ .source = "src/libusb/handle-libusb.h", .dest = "libusb/handle-libusb.h" },
+        .{ .source = "src/libusb/endpoint-libusb.h", .dest = "libusb/endpoint-libusb.h" },
+        .{ .source = "src/libusb/interface-libusb.h", .dest = "libusb/interface-libusb.h" },
+        .{ .source = "src/libusb/device-libusb.h", .dest = "libusb/device-libusb.h" },
+        .{ .source = "src/libusb/messenger-libusb.h", .dest = "libusb/messenger-libusb.h" },
+        .{ .source = "src/libusb/request-libusb.h", .dest = "libusb/request-libusb.h" },
+        .{ .source = "src/libusb/libusb.h", .dest = "libusb/libusb.h" },
+    },
+}
+

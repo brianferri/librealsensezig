@@ -1,0 +1,9 @@
+.{
+    .include = .{
+        "third-party/easyloggingpp/src",
+    },
+    .files = .{
+        "third-party/easyloggingpp/src/easylogging++.cc",
+    },
+    .headers = .{},
+}

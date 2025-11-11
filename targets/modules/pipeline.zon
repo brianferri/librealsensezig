@@ -1,0 +1,19 @@
+.{
+    .include = .{
+        "src/pipeline",
+    },
+    .files = .{
+        "src/pipeline/pipeline.cpp",
+        "src/pipeline/config.cpp",
+        "src/pipeline/profile.cpp",
+        "src/pipeline/aggregator.cpp",
+    },
+    .headers = .{
+        .{ .source = "src/pipeline/pipeline.h", .dest = "pipeline/pipeline.h" },
+        .{ .source = "src/pipeline/config.h", .dest = "pipeline/config.h" },
+        .{ .source = "src/pipeline/profile.h", .dest = "pipeline/profile.h" },
+        .{ .source = "src/pipeline/aggregator.h", .dest = "pipeline/aggregator.h" },
+        .{ .source = "src/pipeline/resolver.h", .dest = "pipeline/resolver.h" },
+    },
+}
+

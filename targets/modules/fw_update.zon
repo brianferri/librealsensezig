@@ -1,0 +1,17 @@
+.{
+    .include = .{
+        "src/fw-update",
+    },
+    .files = .{
+        "src/fw-update/fw-update-device.cpp",
+        "src/fw-update/fw-update-factory.cpp",
+        "src/fw-update/fw-update-unsigned.cpp",
+    },
+    .headers = .{
+        .{ .source = "src/fw-update/fw-update-device-interface.h", .dest = "fw_update/fw-update-device-interface.h" },
+        .{ .source = "src/fw-update/fw-update-device.h", .dest = "fw_update/fw-update-device.h" },
+        .{ .source = "src/fw-update/fw-update-factory.h", .dest = "fw_update/fw-update-factory.h" },
+        .{ .source = "src/fw-update/fw-update-unsigned.h", .dest = "fw_update/fw-update-unsigned.h" },
+    },
+}
+

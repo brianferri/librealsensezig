@@ -1,0 +1,16 @@
+.{
+    .include = .{
+        "src/usb",
+    },
+    .files = .{},
+    .headers = .{
+        .{ .source = "src/usb/usb-device.h", .dest = "usb/usb-device.h" },
+        .{ .source = "src/usb/usb-endpoint.h", .dest = "usb/usb-endpoint.h" },
+        .{ .source = "src/usb/usb-enumerator.h", .dest = "usb/usb-enumerator.h" },
+        .{ .source = "src/usb/usb-interface.h", .dest = "usb/usb-interface.h" },
+        .{ .source = "src/usb/usb-messenger.h", .dest = "usb/usb-messenger.h" },
+        .{ .source = "src/usb/usb-request.h", .dest = "usb/usb-request.h" },
+        .{ .source = "src/usb/usb-types.h", .dest = "usb/usb-types.h" },
+    },
+}
+

@@ -1,0 +1,28 @@
+.{
+    .include = .{
+        "src/linux",
+    },
+    .files = .{
+        "src/linux/backend-v4l2.cpp",
+        "src/linux/backend-hid.cpp",
+        "src/linux/udev-device-watcher.cpp",
+    },
+    .flags = .{
+        "-DRS2_USE_V4L2_BACKEND",
+        "-DUSING_UDEV",
+        "-pthread",
+        "-Wno-missing-field-initializers",
+        "-Wno-switch",
+        "-Wno-multichar",
+        "-Wsequence-point",
+        "-Wformat",
+        "-Wformat-security",
+        "-mssse3",
+    },
+    .modules = .{
+        "usb",
+        "rsusb_backend",
+        "libusb",
+        "third-party_realsense_file",
+    },
+}

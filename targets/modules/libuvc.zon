@@ -1,0 +1,9 @@
+.{
+    .include = .{
+        "src/libuvc",
+    },
+    .files = .{
+        "src/libuvc/rsusb-backend-linux.cpp",
+    },
+    .headers = .{},
+}

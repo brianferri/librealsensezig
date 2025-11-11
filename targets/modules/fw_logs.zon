@@ -1,0 +1,20 @@
+.{
+    .include = .{
+        "src/fw-logs",
+    },
+    .files = .{
+        "src/fw-logs/fw-log-data.cpp",
+        "src/fw-logs/fw-logs-formatting-options.cpp",
+        "src/fw-logs/fw-logs-parser.cpp",
+        "src/fw-logs/fw-logs-xml-helper.cpp",
+        "src/fw-logs/fw-string-formatter.cpp",
+    },
+    .headers = .{
+        .{ .source = "src/fw-logs/fw-log-data.h", .dest = "fw_logs/fw-log-data.h" },
+        .{ .source = "src/fw-logs/fw-logs-formatting-options.h", .dest = "fw_logs/fw-logs-formatting-options.h" },
+        .{ .source = "src/fw-logs/fw-logs-parser.h", .dest = "fw_logs/fw-logs-parser.h" },
+        .{ .source = "src/fw-logs/fw-logs-xml-helper.h", .dest = "fw_logs/fw-logs-xml-helper.h" },
+        .{ .source = "src/fw-logs/fw-string-formatter.h", .dest = "fw_logs/fw-string-formatter.h" },
+    },
+}
+

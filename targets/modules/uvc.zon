@@ -1,0 +1,17 @@
+.{
+    .include = .{
+        "src/uvc",
+    },
+    .files = .{
+        "src/uvc/uvc-device.cpp",
+        "src/uvc/uvc-parser.cpp",
+        "src/uvc/uvc-streamer.cpp",
+    },
+    .headers = .{
+        .{ .source = "src/uvc/uvc-types.h", .dest = "uvc/uvc-types.h" },
+        .{ .source = "src/uvc/uvc-device.h", .dest = "uvc/uvc-device.h" },
+        .{ .source = "src/uvc/uvc-parser.h", .dest = "uvc/uvc-parser.h" },
+        .{ .source = "src/uvc/uvc-streamer.h", .dest = "uvc/uvc-streamer.h" },
+    },
+}
+

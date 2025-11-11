@@ -1,0 +1,27 @@
+.{
+    .include = .{
+        "src/media",
+        "src/media/playback",
+        "src/media/record",
+        "src/media/ros",
+    },
+    .files = .{
+        "src/media/record/record_device.cpp",
+        "src/media/record/record_sensor.cpp",
+        "src/media/playback/playback_device.cpp",
+        "src/media/playback/playback_sensor.cpp",
+        "src/media/ros/ros_reader.cpp",
+        "src/media/ros/ros_writer.cpp",
+    },
+    .headers = .{
+        .{ .source = "src/media/playback/playback-device-info.h", .dest = "media/playback-device-info.h" },
+        .{ .source = "src/media/record/record_device.h", .dest = "media/record_device.h" },
+        .{ .source = "src/media/record/record_sensor.h", .dest = "media/record_sensor.h" },
+        .{ .source = "src/media/playback/playback_device.h", .dest = "media/playback_device.h" },
+        .{ .source = "src/media/playback/playback_sensor.h", .dest = "media/playback_sensor.h" },
+        .{ .source = "src/media/ros/ros_reader.h", .dest = "media/ros_reader.h" },
+        .{ .source = "src/media/ros/ros_writer.h", .dest = "media/ros_writer.h" },
+        .{ .source = "src/media/ros/ros_file_format.h", .dest = "media/ros_file_format.h" },
+    },
+}
+

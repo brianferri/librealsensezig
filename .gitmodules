@@ -1,0 +1,6 @@
+[submodule "third-party/json"]
+	path = third-party/json
+	url = git@github.com:nlohmann/json
+[submodule "librealsense"]
+	path = librealsense
+	url = git@github.com:realsenseai/librealsense
