@@ -1,0 +1,41 @@
+.{
+    .include = .{
+        "src/hid",
+        "src/uvc",
+        "src/rsusb-backend",
+        "src/libuvc",
+        "src/libusb",
+
+        "third-party/hidapi",
+    },
+    .files = .{
+        "src/hid/hid-device.cpp",
+        "src/uvc/uvc-device.cpp",
+        "src/uvc/uvc-parser.cpp",
+        "src/uvc/uvc-streamer.cpp",
+        "src/rsusb-backend/rsusb-backend.cpp",
+        "src/libuvc/rsusb-backend-linux.cpp",
+        "src/libusb/context-libusb.cpp",
+        "src/libusb/interface-libusb.cpp",
+        "src/libusb/device-libusb.cpp",
+        "src/libusb/messenger-libusb.cpp",
+        "src/libusb/request-libusb.cpp",
+        "src/libusb/enumerator-libusb.cpp",
+
+        "third-party/hidapi/hidapi.cpp",
+    },
+    .flags = .{
+        "-DRS2_USE_LIBUVC_BACKEND",
+        "-DEASYLOGGINGPP_ASYNC",
+        "-pthread",
+        "-Wno-missing-field-initializers",
+        "-Wno-switch",
+        "-Wno-multichar",
+        "-Wsequence-point",
+        "-Wformat",
+        "-Wformat-security",
+        "-mstrict-align",
+        "-ftree-vectorize",
+        "-fobjc-arc",
+    },
+}

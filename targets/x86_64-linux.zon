@@ -1,0 +1,28 @@
+.{
+    .include = .{
+        "src/linux",
+        "src/libusb",
+    },
+    .files = .{
+        "src/linux/backend-v4l2.cpp",
+        "src/linux/backend-hid.cpp",
+        "src/libusb/context-libusb.cpp",
+        "src/libusb/interface-libusb.cpp",
+        "src/libusb/device-libusb.cpp",
+        "src/libusb/messenger-libusb.cpp",
+        "src/libusb/request-libusb.cpp",
+        "src/libusb/enumerator-libusb.cpp",
+        "src/image-avx.cpp",
+    },
+    .flags = .{
+        "-DRS2_USE_V4L2_BACKEND",
+        "-pthread",
+        "-Wno-missing-field-initializers",
+        "-Wno-switch",
+        "-Wno-multichar",
+        "-Wsequence-point",
+        "-Wformat",
+        "-Wformat-security",
+        "-mssse3",
+    },
+}

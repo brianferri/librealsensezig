@@ -1,0 +1,21 @@
+.{
+    .name = .librealsensezig,
+    .version = "0.0.0",
+    .fingerprint = 0xb41607d55ea7594d,
+    .minimum_zig_version = "0.15.1",
+    .dependencies = .{
+        .librealsense = .{
+            .path = "librealsense",
+        },
+        .nlohmann_json = .{
+            .path = "third-party/json",
+        },
+    },
+    .paths = .{
+        "build.zig",
+        "build.zig.zon",
+        "src",
+        "bindings",
+        "librealsense",
+    },
+}
