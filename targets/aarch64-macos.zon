@@ -25,6 +25,7 @@
         "third-party/hidapi/hidapi.cpp",
     },
     .flags = .{
+        "-DFORCE_RSUSB_BACKEND",
         "-DRS2_USE_LIBUVC_BACKEND",
         "-DEASYLOGGINGPP_ASYNC",
         "-pthread",

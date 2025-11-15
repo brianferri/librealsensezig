@@ -76,7 +76,6 @@ pub fn linkNlohmannJson(
     lib: *std.Build.Step.Compile,
 ) void {
     const json = b.dependency("nlohmann_json", .{});
-    lib.addIncludePath(json.path(""));
     lib.addIncludePath(json.path("include"));
     lib.addIncludePath(json.path("include/nlohmann"));
     lib.installHeader(json.path("include/nlohmann/json_fwd.hpp"), "nlohmann/json_fwd.hpp");

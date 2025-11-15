@@ -62,10 +62,12 @@
         "third-party/realsense-file/rosbag/roslz4/include",
         "third-party/realsense-file/rosbag/msgs",
 
-        "third-party/easyloggingpp/src",
+        // "third-party/easyloggingpp",
+        // "third-party/easyloggingpp/src",
+
+        "third-party/tclap",
         "third-party/tclap/include",
         "third-party/tclap/include/tclap",
-        "third-party/json/include",
 
         // "third-party/realdds/include",
         // "third-party/realdds/include/realdds",
@@ -232,6 +234,8 @@
         // "src/dds/rs-dds-device-info.cpp",
         // "src/dds/rs-dds-depth-sensor-proxy.cpp",
 
+        // "third-party/easyloggingpp/src/easylogging++.cc",
+
         "third-party/rsutils/src/configure-elpp-logger.cpp",
         "third-party/rsutils/src/crc32.cpp",
         "third-party/rsutils/src/json.cpp",
@@ -260,9 +264,7 @@
         "-pedantic",
         "-D_DEFAULT_SOURCE",
         "-DELPP_THREAD_SAFE",
-        "-DUNICODE",
-        "-DBUILD_EASYLOGGINGPP",
-        "-DHWM_OVER_XU",
+        // "-DBUILD_EASYLOGGINGPP",
         "-DBUILD_SHARED_LIBS",
         "-fPIE",
         // "-DBUILD_WITH_DDS",
