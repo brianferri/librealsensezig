@@ -73,7 +73,7 @@ pub fn linkLibRealSense(
         librealsense.root_module.linkFramework("CoreFoundation", .{});
         librealsense.root_module.linkFramework("IOKit", .{});
     } else if (target.result.os.tag == .linux) {
-        librealsense.root_module.linkSystemLibrary("udev", .{});
+        librealsense.root_module.linkSystemLibrary("libudev", .{});
     }
 
     if (target.result.os.tag != .windows) {
